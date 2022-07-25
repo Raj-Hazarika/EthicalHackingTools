@@ -6,6 +6,7 @@
 
 ## How to use?
 
+
  - ### MAC_changer.py
 
     This python script can be used to change the mac address of our current device to any desired mac address.
@@ -19,7 +20,6 @@
 ```
     python3 MAC_changer.py --help
 ```    
-
 
 
  - ### NetworkScanner.py
@@ -51,7 +51,9 @@
 ```
     python3 ARP_Spoof.py -t <target ip address> -s <source ip address>
 ```
-    After entering the above line in the terminal, the target ip will start sending network packets via our device but our device will stop the request from going through the internet. As a result of which, it will seem as if the target device has lost connection to the internet. To grant access and forward the packets to the internet and maintain the access of the target device, the following line is also required to be entered in a different terminal:
+    After entering the above line in the terminal, the target ip will start sending network packets via our device but our device will stop the request from going  
+    through the internet. As a result of which, it will seem as if the target device has lost connection to the internet. To grant access and forward the packets to 
+    the internet and maintain the access of the target device, the following line is also required to be entered in a different terminal:
 ```
     echo 1 > /proc/sys/net/ipv4/ip_forward
 ```
@@ -61,9 +63,11 @@
     python3 ARP_Spoof.py --help
 ``` 
 
+
  - ### PacketSniffer.py
 
-    This script enables the hacker to read the packets sent by the target. For reading the packet, the hacker has to be the man in the middle which could be done by ARP_Spoof.py. Data of sites loaded over HTTP can be read. For this to work with HTTPS, the HTTPS site has to be downgraded to HTTP.
+    This script enables the hacker to read the packets sent by the target. For reading the packet, the hacker has to be the man in the middle which could be done by 
+    ARP_Spoof.py. Data of sites loaded over HTTP can be read. For this to work with HTTPS, the HTTPS site has to be downgraded to HTTP.
 
     The hacker needs to specify the interface over which the data is to be read. Enter the following line in the script for this to work:
 ```
