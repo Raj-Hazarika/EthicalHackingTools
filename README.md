@@ -43,6 +43,7 @@
     This script is not meant to be used solely in the linux terminal and is used as a helper script in NetworkScanner.py.
 
 
+
  - ### ARP_Spoof.py
 
     ARP spoofing is one way of performing the man in the middle (MITM) attacks. ARP sppofing is done to intercept data of the target device. This is done by tricking the target device to send data to the hacker device instead of sending it to the recipient.
